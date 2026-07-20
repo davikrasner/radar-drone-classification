@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Large data & artifacts
+*.npy
+data/processed/*.npz
+models/*.pt
+
+# Copyrighted paper PDF (IEEE) — cited in README instead
+Drone Classification.pdf
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+
+# Editor config
+.vscode/
+
+# Diagnostic / exploratory analyses (kept locally, not part of the core pipeline)
+*_diagnostic.py
+fig_error.pdf
+snr_margin_derivation.*
+results/figures/global_floor_*.png
+results/figures/n0_*.png
+results/figures/noise_floor_diagnostic.png
+results/figures/session_gain_powerlaw_fit.png
+results/figures/range_doppler_check.png
+results/figures/doppler_sidelobe_profile.png
+results/figures/avg100_range_doppler.png
+
+# Figures: only those embedded in the README are tracked
+results/figures/*
+!results/figures/pipeline_overview.png
+!results/figures/preprocessed_range_doppler.png
+!results/figures/avg100_clean_range_doppler.png
+!results/figures/doppler_spectrum_signatures.png
+!results/figures/confusion_matrix.png
+
+# Cross-eval matrices: summarised in the README table, files not needed
+results/confusion_matrix_loose_on_strict.csv
+results/confusion_matrix_strict_on_loose.csv
